@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("partials/head") %>
+    
+    <title>blog</title>
+  </head>
+  <body>
+    <%- include("partials/nav") %>
+    <div class="container mt-4">
+
+
+         
+    <form action="/blog/new-add" method="post" enctype="multipart/form-data">
+ <div class="mb-3 ">
+    <label for="exampleInputEmail1" class="form-label">Title</label>
+    <input type="title"  name = "title" class="form-control" id="title" aria-describedby="emailHelp">
+ </div>
+
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Body</label>
+    <input type="body" name="body" class="form-control" id="body" aria-describedby="emailHelp">
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Add Thumbnail</label>
+    <input type="file" name = "addThumbnail" class="form-control" id="addThumbnail">
+  </div>
+ 
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        
+
+    </div>
+    <%- include("partials/script") %>
+  </body>
+</html>
