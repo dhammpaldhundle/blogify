@@ -47,3 +47,5 @@ connectDB()
     console.error("Database connection failed:", error.message);
     process.exit(1);
   });
+
+  module.exports = app;
