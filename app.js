@@ -22,6 +22,7 @@ const PORT = (process.env.PORT || process.env.PORT_URL || "3000")
   .replace(/;$/, "");
 app.set("view engine", "ejs");
 app.set("views", path.resolve("./views"));
+app.set("views", path.join(__dirname, "views"));
 
 //middleware
 
